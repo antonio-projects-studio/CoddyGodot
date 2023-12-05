@@ -2,20 +2,20 @@
 
 ## Содержание
 - Модуль [`Python`](#python)
-	1. [Visual Studio Code](#visual-studio-code)
-	2. [Типы данных](#типы-данных)
-	3. [Функции](#функции)
+	- [Visual Studio Code](#visual-studio-code)
+	- [Типы данных](#типы-данных)
+	- [Функции](#функции)
 
 - Модуль [`GitHub`](#github)
-	1. Скоро
-	2. Скоро
-	3. Скоро
+	- Скоро
+	- Скоро
+	- Скоро
 
 - Модуль [`Pygame`](#pygame)
-	1. Скоро
-	2. Скоро
-	3. [Player](#player)
-	4. [NPC](#npc)
+	- Скоро
+	- Скоро
+	- [Player](#player)
+	- [NPC](#npc)
 	
 
 ## Python
