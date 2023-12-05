@@ -1,7 +1,26 @@
 # Домашние задания по курсу Godot
 
+## Содержание
+- Модуль [`Python`](#python)
+	1. [Visual Studio Code](#visual-studio-code)
+	2. [Типы данных](#типы-данных)
+	3. [Функции](#функции)
 
-## ДЗ №1
+- Модуль [`GitHub`](#github)
+	1. Скоро
+	2. Скоро
+	3. Скоро
+
+- Модуль [`Pygame`](#pygame)
+	1. Скоро
+	2. Скоро
+	3. [Player](#player)
+	4. [NPC](#npc)
+	
+
+## Python
+
+### Visual Studio Code
 
 1. **Обязательная часть**
 
@@ -12,18 +31,33 @@
 2. **Дополнительная часть**
 
 - Почитать про типы данных. [Нажми, чтобы перейти]( https://proglib.io/p/samouchitel-po-python-dlya-nachinayushchih-chast-3-tipy-dannyh-preobrazovanie-i-bazovye-operacii-2022-10-14)
-- Почитать про функции. [Нажми, чтобы перейти](https://pythonworld.ru/tipy-dannyx-v-python/vse-o-funkciyax-i-ix-argumentax.html)
 
 3. **Статьи и видео**
 
 - Видео про установку VS. [Нажми, чтобы перейти](https://www.youtube.com/watch?v=ryosJYNOTjI)
 
-## ДЗ №2
+### Типы данных
 
 1. **Обязательная часть**
 
-- Прочитать про типы данных [list](https://pythonworld.ru/tipy-dannyx-v-python/spiski-list-funkcii-i-metody-spiskov.html) и [dict](https://pythonworld.ru/tipy-dannyx-v-python/slovari-dict-funkcii-i-metody-slovarej.html) в python
 - Создать файл `main.py` создать list и dict с различными переменными, написать цикл с выводом каждого элемента/ключ-значения в терминал
+
+2. **Дополнительная часть**
+
+- Почитать про функции. [Нажми, чтобы перейти](https://pythonworld.ru/tipy-dannyx-v-python/vse-o-funkciyax-i-ix-argumentax.html)
+
+3. **Статьи и видео**
+
+- Типы данных в `python`. [Нажми, чтобы перейти]( https://proglib.io/p/samouchitel-po-python-dlya-nachinayushchih-chast-3-tipy-dannyh-preobrazovanie-i-bazovye-operacii-2022-10-14)
+
+### Функции
+
+1. **Обязательная часть**
+
+- Создать файл `main.py`. Написать три функции:
+	1) Принимает два аргумента и возвращает целую часть от деления a/b 
+	2) Принимает три аргумента и возвращает среднее минимального и максимального числа
+	3) Принимает бесконечное количество аргументов и возвращает максимум из них (посмотрите в инете как делать, если не найдете, то подскажу)
 
 2. **Дополнительная часть**
 
@@ -32,7 +66,13 @@
 
 3. **Статьи и видео**
 
-## ДЗ №10
+- Функции в `python`. [Нажми, чтобы перейти](https://pythonworld.ru/tipy-dannyx-v-python/vse-o-funkciyax-i-ix-argumentax.html)
+
+## GitHub
+
+## Pygame
+
+### Player
 
 1. **Обязательная часть**
 
@@ -46,3 +86,18 @@
 
 3. **Статьи и видео**
 
+### NPC
+
+1. **Обязательная часть**
+
+- Продолжить разрабатывать свою игру. На уроке мы добавили NPC и поговорили об алгоритмах. Подумайте, по какому алгоритму будет передвигаться NPC, попробуйте реализовать его логику. Добавьте пару NPC в игру
+
+Советую найти на YouTube понравившееся вам передвижение NPC, зайти на `github` игры и посмотреть код
+
+2. **Дополнительная часть**
+
+- Посмотреть, как работает алгоритм поиска путей: [Видео](https://www.youtube.com/watch?v=gCclsviUeUk)
+
+3. **Статьи и видео**
+
+- Посмотреть, видео про математику в играх: [Видео](https://www.youtube.com/watch?v=yecPG74pU8o)
