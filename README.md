@@ -1,4 +1,4 @@
-# Godot Coddy
+# Coddy Godot
 
 ## Содержание
 - [Модуль `Python`](#python)
@@ -17,7 +17,7 @@
 	- Скоро
 	- [Player](#player)
 	- [Algorithms + NPC](#algorithms-and-npc)
-	- [NPC (continue)](#npc)
+	- [NPC (continue)](#npc-continue)
 - [Вспомогательные материалы](#вспомогательные-материалы)
 	- [Видео](#видео)
 	- [Ссылки](#ссылки)
@@ -67,7 +67,6 @@
 2. **Дополнительная часть**
 
 - Прочитать про классы: [ссылка](https://python-scripts.com/python-class)
-- Прочитать про git: [ссылка](https://habr.com/ru/articles/541258/)
 
 3. **Статьи и видео**
 
@@ -76,22 +75,51 @@
 
 ### Классы
 
+**На следующий урок обязательно принести логин и пароль для входа в ваш аккаунт GitHub на компьютерах Coddy**
+
 1. **Обязательная часть**
 
-- Создать файл `main.py`. Написать три функции:
-	- Принимает два аргумента и возвращает целую часть от деления a/b 
-	- Принимает три аргумента и возвращает среднее минимального и максимального числа
-	- Принимает бесконечное количество аргументов и возвращает максимум из них (посмотрите в инете как делать, если не найдете, то подскажу)
+- Создать файл `main.py`. Написать класс Enemy.
+	
+Что должно быть в классе Enemy:
+- Минимум три характеристики, например, дамаг/здоровье/уровень
+- Функция класса:
+
+	```python
+	@classmethod
+	def move(cls):
+		...
+
+	```
+- Функция экземпляра:
+	 ```python 
+	 def move(self):
+        ...
+	 ```
+- С помощью `print` проверить, что все работает как надо:
+	 ```python 
+	 print(Enemy.hp)
+	 ```
+- Создать конструктор класса:
+	```python
+	def __init__(self, x):
+        self.x = x
+        ...
+
+	```
 
 2. **Дополнительная часть**
 
-- Прочитать про классы: [ссылка](https://python-scripts.com/python-class)
+- Прочитать про пакеты и модули: [ссылка](https://habr.com/ru/articles/718828/)
+- Посмотреть видео про пакеты и модули: [ссфлка](https://www.youtube.com/watch?v=VCRxOdCueqM)
 - Прочитать про git: [ссылка](https://habr.com/ru/articles/541258/)
 
 3. **Статьи и видео**
 
 - Материалы урока: [ссылка](https://github.com/antonio-projects-studio/coddy-godot-homeworks/blob/main/Lessons/Module-1-Python/Lesson-3-class.ipynb)
 - Классы в `python`: [ссылка](https://python-scripts.com/python-class)
+- Видео про классы: [ссылка](https://www.youtube.com/watch?v=XmCAGUo5k70)
+- Видео про конструкторы классов: [ссылка](https://www.youtube.com/watch?v=m4Dc8S_S-I8)
 
 ## GitHub
 
@@ -130,21 +158,20 @@
 - Посмотреть, видео про математику в играх: [ссылка](https://www.youtube.com/watch?v=yecPG74pU8o)
 
 
-### NPC
+### NPC (continue)
 
 1. **Обязательная часть**
 
-- Продолжить разрабатывать свою игру. На уроке мы добавили NPC и поговорили об алгоритмах. Подумайте, по какому алгоритму будет передвигаться NPC, попробуйте реализовать его логику. Добавьте пару NPC в игру
+- Продолжить разрабатывать свою игру. На уроке мы добавили поиск путей для `NPC`. Попробуйте описать свою логику передвижения `NPC` в функции `run_logic`
 
 Советую найти на YouTube понравившееся вам передвижение NPC, зайти на `github` игры и посмотреть код
 
 2. **Дополнительная часть**
 
-- Посмотреть, как работает алгоритм поиска путей: [ссылка](https://www.youtube.com/watch?v=gCclsviUeUk)
+- Посмотреть танец алгоритма сортировки пузырьком: [ссылка](https://www.youtube.com/watch?v=5JMInXAtnQg)
 
 3. **Статьи и видео**
 - Материалы урока: [ссылка](https://github.com/antonio-projects-studio/coddy-godot-homeworks/blob/main/Lessons/Module-3-Pygame/Lesson-5-npc.ipynb)
-- Посмотреть, видео про математику в играх: [ссылка](https://www.youtube.com/watch?v=yecPG74pU8o)
 
 ## Вспомогательные материалы
 
@@ -153,12 +180,17 @@
 - Типы данных в `python`: [ссылка]( https://proglib.io/p/samouchitel-po-python-dlya-nachinayushchih-chast-3-tipy-dannyh-preobrazovanie-i-bazovye-operacii-2022-10-14)
 - Функции в `python`: [ссылка](https://pythonworld.ru/tipy-dannyx-v-python/vse-o-funkciyax-i-ix-argumentax.html)
 - Классы в `python`: [ссылка](https://python-scripts.com/python-class)
+- Пакеты и модули в `python`: [ссылка](https://habr.com/ru/articles/718828/)
 - Git: [ссылка](https://habr.com/ru/articles/541258/)
 - Алгоритмы: [ссылка](https://blog.skillfactory.ru/glossary/algoritm/#:~:text=%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%20%E2%80%94%20%D1%8D%D1%82%D0%BE%20%D1%87%D0%B5%D1%82%D0%BA%D0%B0%D1%8F%20%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D1%8C%20%D0%B4%D0%B5%D0%B9%D1%81%D1%82%D0%B2%D0%B8%D0%B9,%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8%20%D1%8D%D1%84%D1%84%D0%B5%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%BC%20%D1%81%D0%BF%D0%BE%D1%81%D0%BE%D0%B1%D0%BE%D0%BC.)
 - Как работает алгоритм поиска путей: [ссылка](https://www.youtube.com/watch?v=gCclsviUeUk)
 
 ### Видео
 - Видео про установку VS: [ссылка](https://www.youtube.com/watch?v=ryosJYNOTjI)
+- Видео про классы: [ссылка](https://www.youtube.com/watch?v=XmCAGUo5k70)
+- Видео про конструкторы классов: [ссылка](https://www.youtube.com/watch?v=m4Dc8S_S-I8)
+- Видео про пакеты и модули: [ссылка](https://www.youtube.com/watch?v=VCRxOdCueqM)
 - Видео про математику в играх: [ссылка](https://www.youtube.com/watch?v=yecPG74pU8o)
+- Танец алгоритма сортировки пузырьком: [ссылка](https://www.youtube.com/watch?v=5JMInXAtnQg)
 
 
