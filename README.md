@@ -52,7 +52,7 @@
 
 3. **Статьи и видео**
 
-- Материалы урока: [ссылка]()
+- Материалы урока: [ссылка](https://github.com/antonio-projects-studio/coddy-godot-homeworks/blob/main/Lessons/Module-1-Python/Lesson-1-type.ipynb)
 - Типы данных в `python`: [ссылка]( https://proglib.io/p/samouchitel-po-python-dlya-nachinayushchih-chast-3-tipy-dannyh-preobrazovanie-i-bazovye-operacii-2022-10-14)
 
 ### Функции
@@ -71,7 +71,7 @@
 
 3. **Статьи и видео**
 
-- Материалы урока: [ссылка]()
+- Материалы урока: [ссылка](https://github.com/antonio-projects-studio/coddy-godot-homeworks/blob/main/Lessons/Module-1-Python/Lesson-2-functions.ipynb)
 - Функции в `python`: [ссылка](https://pythonworld.ru/tipy-dannyx-v-python/vse-o-funkciyax-i-ix-argumentax.html)
 
 ### Классы
@@ -90,7 +90,7 @@
 
 3. **Статьи и видео**
 
-- Материалы урока: [ссылка]()
+- Материалы урока: [ссылка](https://github.com/antonio-projects-studio/coddy-godot-homeworks/blob/main/Lessons/Module-1-Python/Lesson-3-class.ipynb)
 - Классы в `python`: [ссылка](https://python-scripts.com/python-class)
 
 ## GitHub
@@ -110,7 +110,7 @@
 - Познакомиться с понятием алгоритмов, на следующем уроке будем реализовывать поиск игрока: [ссылка](https://blog.skillfactory.ru/glossary/algoritm/#:~:text=%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%20%E2%80%94%20%D1%8D%D1%82%D0%BE%20%D1%87%D0%B5%D1%82%D0%BA%D0%B0%D1%8F%20%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D1%8C%20%D0%B4%D0%B5%D0%B9%D1%81%D1%82%D0%B2%D0%B8%D0%B9,%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8%20%D1%8D%D1%84%D1%84%D0%B5%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%BC%20%D1%81%D0%BF%D0%BE%D1%81%D0%BE%D0%B1%D0%BE%D0%BC.)
 
 3. **Статьи и видео**
-- Материалы урока: [ссылка]()
+- Материалы урока: [ссылка](https://github.com/antonio-projects-studio/coddy-godot-homeworks/blob/main/Lessons/Module-3-Pygame/Lesson-3-player.ipynb)
 
 ### Algorithms and NPC
 
@@ -126,7 +126,7 @@
 
 3. **Статьи и видео**
 
-- Материалы урока: [ссылка]()
+- Материалы урока: [ссылка](https://github.com/antonio-projects-studio/coddy-godot-homeworks/blob/main/Lessons/Module-3-Pygame/Lesson-4-algorithm-npc.ipynb)
 - Посмотреть, видео про математику в играх: [ссылка](https://www.youtube.com/watch?v=yecPG74pU8o)
 
 
@@ -143,7 +143,7 @@
 - Посмотреть, как работает алгоритм поиска путей: [ссылка](https://www.youtube.com/watch?v=gCclsviUeUk)
 
 3. **Статьи и видео**
-- Материалы урока: [ссылка]()
+- Материалы урока: [ссылка](https://github.com/antonio-projects-studio/coddy-godot-homeworks/blob/main/Lessons/Module-3-Pygame/Lesson-5-npc.ipynb)
 - Посмотреть, видео про математику в играх: [ссылка](https://www.youtube.com/watch?v=yecPG74pU8o)
 
 ## Вспомогательные материалы
