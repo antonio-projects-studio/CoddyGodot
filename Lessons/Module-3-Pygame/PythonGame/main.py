@@ -11,12 +11,12 @@ from path_finding import *
 class Game:
     def __init__(self) -> None:
         pg.init()
-        self.screen = pg.display.set_mode(RES)
+        self.screen = pg.display.set_mode(size=RES)
         self.clock = pg.time.Clock()
         self.new_game()
 
     def new_game(self):
-        self.delta_time = self.clock.tick(FPS)
+        self.delta_time = self.clock.tick(framerate=FPS)
         self.map = Map(game=self)
         self.player = Player(game=self)
         self.npc = NPC(game=self, pos=(8, 5))

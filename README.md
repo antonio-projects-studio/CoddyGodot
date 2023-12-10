@@ -1,30 +1,45 @@
 # Coddy Godot
 
 ## Содержание
-- [Модуль `Python`](#python)
+- [Модуль **Python**](#python)
 	- [Visual Studio Code](#visual-studio-code)
+		- [Урок](#11l)
+		- [Домашнее задание](#11d)
 	- [Типы данных](#типы-данных)
+		- [Урок](#12l)
+		- [Домашнее задание](#12d)
 	- [Функции](#функции)
+		- [Урок](#13l)
+		- [Домашнее задание](#13d)
 	- [Классы](#классы)
+		- [Урок](#14l)
+		- [Домашнее задание](#14d)
 
-- [Модуль `GitHub`](#github)
-	- Скоро
-	- Скоро
+- [Модуль **GitHub**](#github)
 	- Скоро
 
-- [Модуль `Pygame`](#pygame)
-	- Скоро
-	- Скоро
+- [Модуль **Pygame**](#pygame)
 	- [Player](#player)
+		- [Урок](#33l)
+		- [Домашнее задание](#33d)
 	- [Algorithms + NPC](#algorithms-and-npc)
+		- [Урок](#34l)
+		- [Домашнее задание](#34d)
 	- [NPC (continue)](#npc-continue)
+		- [Урок](#35l)
+		- [Домашнее задание](#35d)
 - [Вспомогательные материалы](#вспомогательные-материалы)
 	- [Видео](#видео)
 	- [Ссылки](#ссылки)
 
+---
 ## Python
 
 ### Visual Studio Code
+
+#### <div id='11l'>Урок</div>
+
+#### <div id='11d'>Домашнее задание</div>
 
 1. **Обязательная часть**
 
@@ -42,6 +57,12 @@
 
 ### Типы данных
 
+#### <div id='12l'>Урок</div>
+
+1. Материалы урока: [ссылка](./Lessons/Module-1-Python/Lesson-2-types.ipynb)
+
+#### <div id='12d'>Домашнее задание</div>
+
 1. **Обязательная часть**
 
 - Создать файл `main.py` создать list и dict с различными переменными, написать цикл с выводом каждого элемента/ключ-значения в терминал
@@ -52,10 +73,16 @@
 
 3. **Статьи и видео**
 
-- Материалы урока: [ссылка](https://github.com/antonio-projects-studio/coddy-godot-homeworks/blob/main/Lessons/Module-1-Python/Lesson-1-type.ipynb)
 - Типы данных в `python`: [ссылка]( https://proglib.io/p/samouchitel-po-python-dlya-nachinayushchih-chast-3-tipy-dannyh-preobrazovanie-i-bazovye-operacii-2022-10-14)
 
 ### Функции
+
+#### <div id='13l'>Урок</div>
+
+1. Материалы урока: [ссылка](./Lessons/Module-1-Python/Lesson-3-functions.ipynb)
+
+#### <div id='13d'>Домашнее задание</div>
+
 
 1. **Обязательная часть**
 
@@ -70,12 +97,17 @@
 
 3. **Статьи и видео**
 
-- Материалы урока: [ссылка](https://github.com/antonio-projects-studio/coddy-godot-homeworks/blob/main/Lessons/Module-1-Python/Lesson-2-functions.ipynb)
 - Функции в `python`: [ссылка](https://pythonworld.ru/tipy-dannyx-v-python/vse-o-funkciyax-i-ix-argumentax.html)
 
 ### Классы
 
 **На следующий урок обязательно принести логин и пароль для входа в ваш аккаунт GitHub на компьютерах Coddy**
+
+#### <div id='14l'>Урок</div>
+
+1. Материалы урока: [ссылка](./Lessons/Module-1-Python/Lesson-4-class.ipynb)
+
+#### <div id='14d'>Домашнее задание</div>
 
 1. **Обязательная часть**
 
@@ -116,16 +148,23 @@
 
 3. **Статьи и видео**
 
-- Материалы урока: [ссылка](https://github.com/antonio-projects-studio/coddy-godot-homeworks/blob/main/Lessons/Module-1-Python/Lesson-3-class.ipynb)
 - Классы в `python`: [ссылка](https://python-scripts.com/python-class)
 - Видео про классы: [ссылка](https://www.youtube.com/watch?v=XmCAGUo5k70)
 - Видео про конструкторы классов: [ссылка](https://www.youtube.com/watch?v=m4Dc8S_S-I8)
 
+---
 ## GitHub
 
+---
 ## Pygame
 
 ### Player
+
+#### <div id='33l'>Урок</div>
+
+1. Материалы урока: [ссылка](./Lessons/Module-3-Pygame/Lesson-3-player.ipynb)
+
+#### <div id='33d'>Домашнее задание</div>
 
 1. **Обязательная часть**
 
@@ -138,9 +177,15 @@
 - Познакомиться с понятием алгоритмов, на следующем уроке будем реализовывать поиск игрока: [ссылка](https://blog.skillfactory.ru/glossary/algoritm/#:~:text=%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%20%E2%80%94%20%D1%8D%D1%82%D0%BE%20%D1%87%D0%B5%D1%82%D0%BA%D0%B0%D1%8F%20%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D1%8C%20%D0%B4%D0%B5%D0%B9%D1%81%D1%82%D0%B2%D0%B8%D0%B9,%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8%20%D1%8D%D1%84%D1%84%D0%B5%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%BC%20%D1%81%D0%BF%D0%BE%D1%81%D0%BE%D0%B1%D0%BE%D0%BC.)
 
 3. **Статьи и видео**
-- Материалы урока: [ссылка](https://github.com/antonio-projects-studio/coddy-godot-homeworks/blob/main/Lessons/Module-3-Pygame/Lesson-3-player.ipynb)
+
 
 ### Algorithms and NPC
+
+#### <div id='34l'>Урок</div>
+
+1. Материалы урока: [ссылка](./Lessons/Module-3-Pygame/Lesson-4-algorithm-npc.ipynb)
+
+#### <div id='34d'>Домашнее задание</div>
 
 1. **Обязательная часть**
 
@@ -154,11 +199,17 @@
 
 3. **Статьи и видео**
 
-- Материалы урока: [ссылка](https://github.com/antonio-projects-studio/coddy-godot-homeworks/blob/main/Lessons/Module-3-Pygame/Lesson-4-algorithm-npc.ipynb)
 - Посмотреть, видео про математику в играх: [ссылка](https://www.youtube.com/watch?v=yecPG74pU8o)
 
 
 ### NPC (continue)
+
+#### <div id='35l'>Урок</div>
+
+1. Материалы урока: [ссылка](./Lessons/Module-3-Pygame/Lesson-5-npc-continue.ipynb)
+
+#### <div id='35d'>Домашнее задание</div>
+
 
 1. **Обязательная часть**
 
@@ -171,12 +222,11 @@
 - Посмотреть танец алгоритма сортировки пузырьком: [ссылка](https://www.youtube.com/watch?v=5JMInXAtnQg)
 
 3. **Статьи и видео**
-- Материалы урока: [ссылка](https://github.com/antonio-projects-studio/coddy-godot-homeworks/blob/main/Lessons/Module-3-Pygame/Lesson-5-npc.ipynb)
 
 ## Вспомогательные материалы
 
 ### Ссылки
-- Команды терминала: [ссылка]()
+- Команды терминала: [ссылка](./Lessons/terminal-commands.md)
 - Типы данных в `python`: [ссылка]( https://proglib.io/p/samouchitel-po-python-dlya-nachinayushchih-chast-3-tipy-dannyh-preobrazovanie-i-bazovye-operacii-2022-10-14)
 - Функции в `python`: [ссылка](https://pythonworld.ru/tipy-dannyx-v-python/vse-o-funkciyax-i-ix-argumentax.html)
 - Классы в `python`: [ссылка](https://python-scripts.com/python-class)
