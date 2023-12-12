@@ -13,7 +13,7 @@
 
 ### Ссылки
 
-- Команды терминала: [ссылка](./Lessons/terminal-commands.md)
+- Команды терминала: [ссылка](./Modules/terminal-commands.md)
 - Типы данных в `python`: [ссылка]( https://proglib.io/p/samouchitel-po-python-dlya-nachinayushchih-chast-3-tipy-dannyh-preobrazovanie-i-bazovye-operacii-2022-10-14)
 - Функции в `python`: [ссылка](https://pythonworld.ru/tipy-dannyx-v-python/vse-o-funkciyax-i-ix-argumentax.html)
 - Классы в `python`: [ссылка](https://python-scripts.com/python-class)
