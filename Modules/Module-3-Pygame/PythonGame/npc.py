@@ -1,16 +1,17 @@
+
 import pygame as pg
 import math
 from settings import *
 
 
 class NPC():
-    def __init__(self, game, pos):
+    def __init__(self, game, pos, color='red', speed=SPEED_NPC):
         self.x, self.y = pos
+        self.color = color
         self.game = game
         self.player = game.player
         self.theta = 0
-        #! Добавили SPEED_NPC из настроек
-        self.speed = SPEED_NPC
+        self.speed = speed
 
     #! Добавили функцию, которая возвращает положение npc в мире
     @property
@@ -18,12 +19,12 @@ class NPC():
         return int(self.x), int(self.y)
 
     def draw(self):
-        pg.draw.circle(self.game.screen, 'red',
+        pg.draw.circle(self.game.screen, self.color,
                        (100 * self.x, 100 * self.y), 15)
-        pg.draw.line(self.game.screen, 'red', (self.x * 100 + 14.5 * math.sin(self.theta), self.y * 100 - 14.5 * math.cos(self.theta)),
+        pg.draw.line(self.game.screen, self.color, (self.x * 100 + 14.5 * math.sin(self.theta), self.y * 100 - 14.5 * math.cos(self.theta)),
                      (self.x * 100 - 35 * math.cos(self.theta),
                      self.y * 100 - 35 * math.sin(self.theta)), 2)
-        pg.draw.line(self.game.screen, 'red', (self.x * 100 - 14.5 * math.sin(self.theta), self.y * 100 + 14.5 * math.cos(self.theta)),
+        pg.draw.line(self.game.screen, self.color, (self.x * 100 - 14.5 * math.sin(self.theta), self.y * 100 + 14.5 * math.cos(self.theta)),
                      (self.x * 100 - 35 * math.cos(self.theta),
                      self.y * 100 - 35 * math.sin(self.theta)), 2)
 
@@ -40,7 +41,6 @@ class NPC():
         self.dist = math.hypot(dx, dy)
         self.norm_dist = self.dist * math.cos(delta)
 
-    #! Добавили функции на проверку столновений со стенками
     def check_wall(self, x, y):
         return (x, y) not in self.game.map.world_map
 
@@ -49,26 +49,20 @@ class NPC():
             self.x += dx
         if self.check_wall(int(self.x), int(self.y + dy)):
             self.y += dy
-    #! ---------------------------------------------------
 
-    #! Добавили функцию move для передвижения
     def move(self):
         next_pos = self.game.path_finding.get_path(
             self.map_pos, self.game.player.map_pos)
         next_x, next_y = next_pos
 
-        #! Добавили три строчки для плавного движения
         angle = math.atan2(next_y + 0.5 - self.y, next_x + 0.5 - self.x)
         dx = math.cos(angle) * self.speed * self.game.delta_time
         dy = math.sin(angle) * self.speed * self.game.delta_time
-        #! ------------------------------------------
 
-        pg.draw.rect(self.game.screen, 'blue',
-                     (100 * next_x, 100 * next_y, 100, 100))
-        #! Передали управление передвижение функции check_wall_collision
-        self.check_wall_collision(dx=dx, dy=dy)
+        #! Добавляем проверку, что на следующей клетке никто не стоит
+        if next_pos not in self.game.npc_control.npc_positions:
+            self.check_wall_collision(dx, dy)
 
-    #! Добавили функцию для отслеживания далеко ли игрок или нет
     def ray_cast_player_npc(self):
         if self.game.player.map_pos == self.map_pos:
             return True

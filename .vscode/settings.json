@@ -1,0 +1,5 @@
+{
+	"python.analysis.extraPaths": [
+		"./Modules/Module-3-Pygame/PythonGame"
+	]
+}

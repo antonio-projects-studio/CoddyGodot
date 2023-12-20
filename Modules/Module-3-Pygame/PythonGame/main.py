@@ -1,11 +1,16 @@
+# main.py
 import pygame as pg
 import sys
 from settings import *
 from map import *
 from player import *
-from npc import *
-#! Импортируем pathfinding
+#! убираем import npc, потому что мы запускаем npc с помощью npc_control
+#? - from npc import *
+
+#! импортируем npc_control
+from npc_control import *
 from path_finding import *
+
 
 
 class Game:
@@ -16,24 +21,31 @@ class Game:
         self.new_game()
 
     def new_game(self):
-        self.delta_time = self.clock.tick(framerate=FPS)
+        self.delta_time = self.clock.tick(FPS)
         self.map = Map(game=self)
         self.player = Player(game=self)
-        self.npc = NPC(game=self, pos=(8, 5))
-        #! Добавляем переменную, которую будем использовать для поиска путей
+        #! Убираем добавление npc, потому что будем делать с помощью NpcControl
+        #? - self.npc = NPC(game=self, pos=(8, 5))
+        
+        #! Добавляем переменную npc_control
+        self.npc_control = NpcControl(game=self)
         self.path_finding = PathFinding(game=self)
 
     def update(self):
         pg.display.flip()
         self.delta_time = self.clock.tick(FPS)
         self.player.update()
-        self.npc.update()
+        #! Убираем update npc
+        #? - self.npc.update()
+        self.npc_control.update()
 
     def draw(self):
         self.screen.fill('black')
         self.map.draw()
         self.player.draw()
-        self.npc.draw()
+        #! Убираем draw npc
+        #? - self.npc.draw()
+        self.npc_control.draw()
 
     def check_event(self):
         for event in pg.event.get():
