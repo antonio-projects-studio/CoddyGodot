@@ -5,15 +5,13 @@ from settings import *
 
 
 class NPC():
-    def __init__(self, game, pos, color='red', speed=SPEED_NPC):
+    def __init__(self, game, pos, color):
         self.x, self.y = pos
         self.color = color
         self.game = game
         self.player = game.player
         self.theta = 0
-        self.speed = speed
 
-    #! Добавили функцию, которая возвращает положение npc в мире
     @property
     def map_pos(self):
         return int(self.x), int(self.y)
@@ -21,25 +19,19 @@ class NPC():
     def draw(self):
         pg.draw.circle(self.game.screen, self.color,
                        (100 * self.x, 100 * self.y), 15)
-        pg.draw.line(self.game.screen, self.color, (self.x * 100 + 14.5 * math.sin(self.theta), self.y * 100 - 14.5 * math.cos(self.theta)),
-                     (self.x * 100 - 35 * math.cos(self.theta),
-                     self.y * 100 - 35 * math.sin(self.theta)), 2)
         pg.draw.line(self.game.screen, self.color, (self.x * 100 - 14.5 * math.sin(self.theta), self.y * 100 + 14.5 * math.cos(self.theta)),
-                     (self.x * 100 - 35 * math.cos(self.theta),
-                     self.y * 100 - 35 * math.sin(self.theta)), 2)
+                     (self.x * 100 + 35 * math.cos(self.theta),
+                     self.y * 100 + 35 * math.sin(self.theta)), 2)
+        pg.draw.line(self.game.screen, self.color, (self.x * 100 + 14.5 * math.sin(self.theta), self.y * 100 - 14.5 * math.cos(self.theta)),
+                     (self.x * 100 + 35 * math.cos(self.theta),
+                     self.y * 100 + 35 * math.sin(self.theta)), 2)
 
     def look(self):
-        dx = self.x - self.player.x
-        dy = self.y - self.player.y
-        self.dx, self.dy = dx, dy
+        dx = self.player.x - self.x
+        dy = self.player.y - self.y
         self.theta = math.atan2(dy, dx)
 
-        delta = self.theta - self.player.angle
-        if (dx > 0 and self.player.angle > math.pi) or (dx < 0 and dy < 0):
-            delta += math.tau
 
-        self.dist = math.hypot(dx, dy)
-        self.norm_dist = self.dist * math.cos(delta)
 
     def check_wall(self, x, y):
         return (x, y) not in self.game.map.world_map
@@ -49,19 +41,6 @@ class NPC():
             self.x += dx
         if self.check_wall(int(self.x), int(self.y + dy)):
             self.y += dy
-
-    def move(self):
-        next_pos = self.game.path_finding.get_path(
-            self.map_pos, self.game.player.map_pos)
-        next_x, next_y = next_pos
-
-        angle = math.atan2(next_y + 0.5 - self.y, next_x + 0.5 - self.x)
-        dx = math.cos(angle) * self.speed * self.game.delta_time
-        dy = math.sin(angle) * self.speed * self.game.delta_time
-
-        #! Добавляем проверку, что на следующей клетке никто не стоит
-        if next_pos not in self.game.npc_control.npc_positions:
-            self.check_wall_collision(dx, dy)
 
     def ray_cast_player_npc(self):
         if self.game.player.map_pos == self.map_pos:
@@ -73,7 +52,7 @@ class NPC():
         ox, oy = self.game.player.pos
         x_map, y_map = self.game.player.map_pos
 
-        ray_angle = self.theta
+        ray_angle = math.pi + self.theta
 
         sin_a = math.sin(ray_angle)
         cos_a = math.cos(ray_angle)
@@ -108,7 +87,7 @@ class NPC():
         delta_depth = dx / cos_a
         dy = delta_depth * sin_a
 
-        for i in range(MAX_DEPTH):
+        for _ in range(MAX_DEPTH):
             tile_vert = int(x_vert), int(y_vert)
             if tile_vert == self.map_pos:
                 player_dist_v = depth_vert
@@ -127,12 +106,9 @@ class NPC():
             return True
         return False
 
-    #! Дописали run_logic
-    def run_logic(self):
-        self.ray_cast_value = self.ray_cast_player_npc()
-        if self.ray_cast_value == True:
-            self.move()
+    def logic(self):
+        pass
 
     def update(self):
         self.look()
-        self.run_logic()
+        self.logic()
