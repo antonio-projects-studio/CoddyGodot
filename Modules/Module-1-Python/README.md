@@ -17,6 +17,9 @@
 - [Наследование](#наследование)
   - [Урок](#урок-15)
   - [Домашнее задание](#домашнее-задание-15)
+- [Импорты](#импорты)
+  - [Урок](#урок-16)
+  - [Домашнее задание](#домашнее-задание-16)
 
 ---
 
@@ -176,3 +179,43 @@
 
   - Наследование в `python`: [ссылка](https://metanit.com/python/tutorial/7.3.php)
   - Видео про классы: [ссылка](https://www.youtube.com/watch?v=7WVYqjdMa6U)
+
+### Импорты
+
+#### Урок 1.6
+
+- Материалы урока: [ссылка](./Lesson-6-import.ipynb)
+
+#### Домашнее задание 1.6
+
+- **Обязательная часть**
+
+  - Создать файл `main.py`. Создать папку 'npc', туда положить файл с родительствим классом и папки с файлами под ваши созданные в прошлом дз классы и настроить импорты так, чтобы в main.py был доступ ко всем классам
+
+  **Пример:**
+  
+  Допустим у меня два типа `npc`:
+  1. `Runner`
+  2. `Shooter`
+
+  Тогда структура папок будет выглядеть следующим образом:
+
+  ${\color{green}\text{main.py}}$ \
+  ${\color{silver}\text{npc}}$ \
+  $\hookrightarrow\color{green}{\text{npc.py}}$ \
+  $\hookrightarrow\color{green}{\text{\_\_init\_\_.py}}$ \
+  $\hookrightarrow\color{silver}{\text{runner}}$ \
+  $\qquad\hookrightarrow\color{green}{\text{runner.py}}$ \
+  $\qquad\hookrightarrow\color{green}{\text{\_\_init\_\_.py}}$ \
+  $\hookrightarrow\color{silver}{\text{shooter}}$ \
+  $\qquad\hookrightarrow\color{green}{\text{shooter.py}}$ \
+  $\qquad\hookrightarrow\color{green}{\text{\_\_init\_\_.py}}$
+
+- **Дополнительная часть**
+
+  - Прочитать про git: [ссылка](https://habr.com/ru/articles/541258/)
+
+- **Статьи и видео**
+
+  - Пакеты и модули в `python`: [ссылка](https://habr.com/ru/articles/718828/)
+  - Видео про пакеты и модули: [ссылка](https://www.youtube.com/watch?v=VCRxOdCueqM)
