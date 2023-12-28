@@ -180,6 +180,8 @@
   - Наследование в `python`: [ссылка](https://metanit.com/python/tutorial/7.3.php)
   - Видео про классы: [ссылка](https://www.youtube.com/watch?v=7WVYqjdMa6U)
 
+---
+
 ### Импорты
 
 #### Урок 1.6
