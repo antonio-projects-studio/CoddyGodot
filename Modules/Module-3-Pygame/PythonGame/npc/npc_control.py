@@ -1,4 +1,3 @@
-from .npc import *
 from .runner import *
 from .shooter import *
 
@@ -13,8 +12,11 @@ class NpcControl:
     def add_npc(self):
         self.npc_list = [
             Runner(game=self.game, pos=(11.5, 7.5), color='blue'),
-            Shooter(game=self.game, pos=(6.5, 7.5), color='yellow', ttl=100, bullet_cnt=5),
-            Shooter(game=self.game, pos=(8, 3), ttl=250)
+            Shooter(game=self.game, pos=(6.5, 7.5), color='yellow', ttl=20, bullet_cnt=1000),
+            Shooter(game=self.game, pos=(8, 3), ttl=250),
+            # Runner(game=self.game, pos=(5, 7.5), color='blue'),
+            Shooter(game=self.game, pos=(15, 7.5), color='yellow', ttl=20, bullet_cnt=1000),
+            Shooter(game=self.game, pos=(10, 5), ttl=20, bullet_cnt=1000),
         ]
 
     def update(self):

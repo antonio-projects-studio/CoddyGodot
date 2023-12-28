@@ -1,10 +1,9 @@
-
 import pygame as pg
 import math
 from settings import *
 
 
-class NPC():
+class NPC:
     def __init__(self, game, pos, color):
         self.x, self.y = pos
         self.color = color
