@@ -16,6 +16,10 @@ class Bullet():
         len_to_player = ((self.game.player.x - self.x) ** 2 + (self.game.player.y - self.y) ** 2)
         if len_to_player < BULLET_KILL_LEN:
             self.strike = True
+            self.game.player.hp -= 1
+            if self.game.player.hp <= 0:
+                self.game.new_game()
+            
 
     def move(self):
         #! runner

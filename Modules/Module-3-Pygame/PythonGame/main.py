@@ -6,6 +6,7 @@ from map import *
 from player import *
 from npc import *
 from path_finding import *
+from sound import *
 
 
 class Game:
@@ -14,6 +15,7 @@ class Game:
         self.screen = pg.display.set_mode(size=RES)
         self.clock = pg.time.Clock()
         self.new_game()
+        self.sound = Sound(game=self)
 
     def new_game(self):
         self.delta_time = self.clock.tick(FPS)

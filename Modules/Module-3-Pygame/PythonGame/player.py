@@ -8,6 +8,7 @@ class Player:
         self.game = game
         self.x, self.y = PLAYER_POS
         self.angle = PLAYER_ANGLE
+        self.hp = 5
 
     #! Добавили функцию, которая возвращает положение игрока в мире
     @property
@@ -29,6 +30,9 @@ class Player:
 
         pg.draw.circle(self.game.screen, 'green',
                        (self.x * 100, self.y * 100), 15)
+        
+        for i in range(self.hp):
+            pg.draw.circle(self.game.screen, 'red', ((1 + i) * 100, 0.5 * 100), 10)
 
     def movement(self):
         sin_a = math.sin(self.angle)
