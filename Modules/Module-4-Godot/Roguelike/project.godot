@@ -13,6 +13,15 @@ config_version=4
 config/name="Roguelike"
 config/icon="res://icon.png"
 
+[display]
+
+window/size/width=480
+window/size/height=270
+window/size/test_width=1280
+window/size/test_height=720
+window/stretch/mode="2d"
+window/stretch/aspect="keep"
+
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true
