@@ -5,6 +5,7 @@
 - [Модуль **Python**](./Modules/Module-1-Python/)
 - [Модуль **GitHub**](./Modules/Module-2-GitHub/)
 - [Модуль **Pygame**](./Modules/Module-3-Pygame/)
+- [Модуль **Godot**](./Modules/Module-4-Godot/)
 - [Вспомогательные материалы](#вспомогательные-материалы)
   - [Видео](#видео)
   - [Ссылки](#ссылки)
