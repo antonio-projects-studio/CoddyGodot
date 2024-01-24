@@ -20,7 +20,7 @@ _global_script_classes=[ {
 "path": "res://Characters/FSM.gd"
 } ]
 _global_script_class_icons={
-"Character": "",
+"Character": "res://Art/v1.1 dungeon crawler 16x16 pixel pack/heroes/knight/knight_idle_anim_f0.png",
 "FiniteStateMachine": ""
 }
 
