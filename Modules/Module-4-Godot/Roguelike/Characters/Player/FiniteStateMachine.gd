@@ -8,17 +8,17 @@ func _init() -> void:
 
 func _ready():
 	set_state(states.idle)
-	
+
 
 func _state_logic(_delta: float) -> void:
 	parent.get_input()
 	parent.move()
-	
+
 
 func _get_transition() -> int:
 	match state:
 		states.idle:
-			if parent.velocity.length() > 10: 
+			if parent.velocity.length() > 10:
 				return states.move
 		states.move:
 			if parent.velocity.length() < 10:

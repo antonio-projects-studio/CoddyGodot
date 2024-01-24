@@ -18,10 +18,28 @@ _global_script_classes=[ {
 "class": "FiniteStateMachine",
 "language": "GDScript",
 "path": "res://Characters/FSM.gd"
+}, {
+"base": "Area2D",
+"class": "Hitbox",
+"language": "GDScript",
+"path": "res://Characters/Hitbox.gd"
+}, {
+"base": "Character",
+"class": "Player",
+"language": "GDScript",
+"path": "res://Characters/Player/Player.gd"
+}, {
+"base": "Node2D",
+"class": "Weapon",
+"language": "GDScript",
+"path": "res://Weapons/Weapon.gd"
 } ]
 _global_script_class_icons={
 "Character": "res://Art/v1.1 dungeon crawler 16x16 pixel pack/heroes/knight/knight_idle_anim_f0.png",
-"FiniteStateMachine": ""
+"FiniteStateMachine": "",
+"Hitbox": "",
+"Player": "",
+"Weapon": "res://Art/v1.1 dungeon crawler 16x16 pixel pack/heroes/knight/weapon_sword_1.png"
 }
 
 [application]
