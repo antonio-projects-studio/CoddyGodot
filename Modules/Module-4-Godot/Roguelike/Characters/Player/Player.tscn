@@ -228,6 +228,7 @@ texture = ExtResource( 3 )
 collision_layer = 0
 collision_mask = 4
 script = ExtResource( 8 )
+knockback_force = 500
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sword/Node2D/Sprite/Hitbox" index="0"]
 rotation = 0.785398
