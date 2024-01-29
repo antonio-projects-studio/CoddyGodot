@@ -76,6 +76,64 @@ git remote add origin <ssh url>
 git checkout <number of commit>
 ```
 
-### Плагины
+### Ветки и слияния
+
+В Git ветки — это элемент повседневного процесса разработки.
+[Ссылка на видео](https://www.youtube.com/watch?v=ydtgQSaUzw0)
+
+Как избежать конфликтов при слиянии?
+
+- Нужно работать в непересекающихся сущностях
+
+Как разрешать конфликты при слиянии?
+
+- Надо выбрать версию, которая нам подходит
+
+Пример с слиянием и ветвлением: [ссылка](https://git-scm.com/book/ru/v2/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-%D0%B2%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B8-%D1%81%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D1%8F) \
+Видео про слияние: [ссылка](https://www.youtube.com/watch?v=g--N6QHbt6Q)
+
+Команды:
+
+- Создание новой ветки:
+
+```sh
+git checkout -b <new branch name>
+```
+
+- Для того, чтобы слить две ветки:
+
+1. Переключаемся на ветку, которую хотим обновить
+
+```sh
+git checkout <branch name>
+```
+
+2.
+
+```sh
+git merge <branch name>
+```
+
+- Чтобы удалить ветку удаленно:
+
+```sh
+git push origin --delete <branch name>
+```
+
+- Чтобы удалить ветку локально:
+
+```sh
+git branch --delete <branch name>
+```
+
+- Чтобы посмотреть список веток:
+
+```sh
+git branch
+```
+
+### Плагины и приложения
 
 - `Git Graph`: [ссылка](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
+- `GitHub Desctop`: [ссылка на Linux](https://gist.github.com/berkorbay/6feda478a00b0432d13f1fc0a50467f1), [ссылка на Windows](https://desktop.github.com/)
+- `Open in GitHub Desktop`: [ссылка](https://marketplace.visualstudio.com/items?itemName=wraith13.open-in-github-desktop)
