@@ -22,7 +22,7 @@ _global_script_classes=[ {
 "base": "Character",
 "class": "Enemy",
 "language": "GDScript",
-"path": "res://Characters/Enemy/Enemy.gd"
+"path": "res://Characters/Enemies/Enemy.gd"
 }, {
 "base": "Node",
 "class": "FiniteStateMachine",
