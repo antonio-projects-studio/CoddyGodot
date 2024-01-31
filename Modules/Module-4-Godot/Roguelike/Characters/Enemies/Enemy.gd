@@ -9,11 +9,15 @@ onready var player: KinematicBody2D = get_tree().current_scene.get_node("Player"
 onready var path_timer: Timer = get_node("PathTimer")
 
 
+func _ready() -> void:
+	var __ = connect("tree_exited", get_parent(), "_on_enemy_killed")
+
+
 func chase() -> void:
 	if path:
 		var vector_to_next_point: Vector2 = path[0] - global_position
 		var distance_to_next_point: float = vector_to_next_point.length()
-		if distance_to_next_point < 1:
+		if distance_to_next_point < 3:
 			path.remove(0)
 			if not path:
 				return

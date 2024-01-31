@@ -251,7 +251,7 @@ script = ExtResource( 3 )
 
 [node name="AnimatedSprite" parent="." index="1"]
 frames = SubResource( 24 )
-animation = "fly"
+animation = "dead"
 
 [node name="CollisionShape2D" parent="." index="2"]
 shape = SubResource( 6 )
@@ -263,6 +263,7 @@ script = ExtResource( 5 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" index="0"]
 shape = SubResource( 28 )
+disabled = true
 
 [node name="AnimationPlayer" parent="." index="4"]
 root_node = NodePath("../AnimatedSprite")
