@@ -5,9 +5,9 @@ class_name Player
 onready var sword: Node2D = get_node("Sword")
 onready var sword_hitbox: Area2D = get_node("Sword/Node2D/Sprite/Hitbox")
 onready var sword_anim: AnimationPlayer = get_node("Sword/SwordAnimationPlayer")
+onready var charge_particles: Particles2D = get_node("Sword/Node2D/Sprite/ChargeParticles")
 
-
-func _physics_process(_delta):
+func _process(_delta):
 	var mouse_direction: Vector2 = (get_global_mouse_position() - global_position).normalized()
 
 	if mouse_direction.x > 0 and animated_sprite.flip_h:
@@ -22,6 +22,9 @@ func _physics_process(_delta):
 	elif sword.scale.y == -1 and mouse_direction.x > 0:
 		sword.scale.y = 1
 
+func cancel_attack():
+	sword_anim.play("cancel_attack")
+
 
 func get_input():
 	mov_direction = Vector2.ZERO
@@ -35,6 +38,11 @@ func get_input():
 		mov_direction += Vector2.LEFT
 
 	if Input.is_action_just_pressed("ui_attack") and not sword_anim.is_playing():
-		sword_anim.play("attack")
+		sword_anim.play("charge")
+	elif Input.is_action_just_released("ui_attack"):
+		if sword_anim.is_playing() and sword_anim.current_animation == 'charge':
+			sword_anim.play("attack")
+		elif charge_particles.emitting:
+			sword_anim.play("strong_attack")
 
 
