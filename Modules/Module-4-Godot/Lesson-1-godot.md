@@ -12,5 +12,5 @@ Godot — это универсальный 2D и 3D игровой движок
 - Установка: \
 Скачать `zip` по этой [ссылке](https://godotengine.org/download/windows/). Далее извлечь файлы в папку `Program Files` и создать ярлык на рабочий стол
 
-На код игры, которую будем реализовывать: [ссылка](https://github.com/MateuSai/Godot-Roguelike-Tutorial.git)
+На код игры, которую будем реализовывать: [ссылка](https://github.com/MateuSai/Godot-Roguelike-Tutorial.git) \
 На YouTube игры, которую будем реализовывать: [ссылка](https://www.youtube.com/watch?v=axMNUTmFEDA&list=PL2-ArCpIQtjELkyLKec8BaVVCeunuHSK9&index=1)
