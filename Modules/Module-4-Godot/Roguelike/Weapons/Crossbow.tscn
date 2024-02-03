@@ -1,19 +1,14 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Weapons/Weapon.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Weapons/Crossbow.gd" type="Script" id=2]
 [ext_resource path="res://Art/Crossbow.png" type="Texture" id=3]
 [ext_resource path="res://Characters/Player/White.gdshader" type="Shader" id=4]
-[ext_resource path="res://Art/19+ icons/iceB.png" type="Texture" id=5]
 
 [sub_resource type="ShaderMaterial" id=2]
 resource_local_to_scene = true
 shader = ExtResource( 4 )
 shader_param/active = false
-
-[sub_resource type="CapsuleShape2D" id=1]
-radius = 7.0
-height = 2.0
 
 [sub_resource type="Animation" id=7]
 resource_name = "active_ability"
@@ -218,17 +213,9 @@ texture = ExtResource( 3 )
 [node name="CollisionShape2D" parent="Node2D/Sprite/Hitbox" index="0"]
 disabled = false
 
-[node name="CollisionShape2D" parent="PlayerDetector" index="0"]
-position = Vector2( -9, -1 )
-rotation = 1.5708
-shape = SubResource( 1 )
-
-[node name="AnimationPlayer" parent="." index="2"]
+[node name="AnimationPlayer" parent="." index="1"]
 anims/active_ability = SubResource( 7 )
 anims/attack = SubResource( 3 )
 anims/cancel_attack = SubResource( 4 )
 anims/charge = SubResource( 5 )
 anims/strong_attack = SubResource( 6 )
-
-[node name="AbilityIcon" parent="UI" index="0"]
-texture_under = ExtResource( 5 )

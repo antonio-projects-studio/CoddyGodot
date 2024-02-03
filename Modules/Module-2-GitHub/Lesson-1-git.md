@@ -70,6 +70,7 @@ git remote add origin <ssh url>
 - `git commit` — фиксирует изменения
 - `git push` — отправляет изменения на GitHub
 - `git pull` — обновляет локальный репозиторий до последней версии на `GitHub`
+- `git commit --amend` — изменяет последний коммит
 
 С помощью команды `checkout` можно переходить между `commit`:
 
