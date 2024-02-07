@@ -270,3 +270,6 @@ anims/dead = SubResource( 23 )
 anims/hurt = SubResource( 22 )
 anims/idle = SubResource( 16 )
 anims/move = SubResource( 17 )
+
+[node name="Camera2D" type="Camera2D" parent="." index="5"]
+current = true

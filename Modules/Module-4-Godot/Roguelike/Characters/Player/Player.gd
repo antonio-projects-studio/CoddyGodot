@@ -60,5 +60,11 @@ func _switch_weapon(direction: int) -> void:
 	current_weapon = weapons.get_child(index)
 	current_weapon.show()
 	
+	
+func switch_camera() -> void:
+	var main_scene_camera: Camera2D = get_parent().get_node("Camera2D")
+	main_scene_camera.position = position
+	main_scene_camera.current = true
+	get_node("Camera2D").current = false
 
 
