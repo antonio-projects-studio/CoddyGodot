@@ -73,6 +73,7 @@ git remote add origin <ssh url>
 - `git commit --amend` — изменяет последний коммит
 - `git reset HEAD~` — удаляем только коммит
 - `git reset --hard HEAD~` — удаляем коммит и изменения
+- `git`
 
 С помощью команды `checkout` можно переходить между `commit`:
 
